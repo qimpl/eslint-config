@@ -2,6 +2,8 @@
 
 Qimpl shared eslint configuration
 
+[![NPM](https://img.shields.io/npm/v/@qimpl/eslint-config.svg)](https://www.npmjs.com/package/@qimpl/eslint-config)
+
 ## Usage
 
 ```
