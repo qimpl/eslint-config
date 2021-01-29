@@ -9,11 +9,13 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:import/errors',
+    'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'prettier',
     'prettier/babel',
     'prettier/react',
   ],
+  // When using TypeScript, override this parser in your local eslint configuration
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
@@ -48,7 +50,10 @@ module.exports = {
       },
     ],
     'no-continue': [0],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
     'react/forbid-prop-types': [1, { forbid: ['navigation'] }],
   },
   settings: {
