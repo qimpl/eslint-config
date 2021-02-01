@@ -20,6 +20,14 @@ module.exports = {
 };
 ```
 
+#### With TypeScript:
+
+```js
+module.exports = {
+  extends: '@qimpl/eslint-config/react-typescript',
+};
+```
+
 ### Svelte
 
 There is the `.eslintrc.js` config for Svelte projects:
