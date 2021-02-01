@@ -1,5 +1,5 @@
 module.exports = {
-  extend: [
+  extends: [
     './react.js',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
