@@ -22,9 +22,14 @@ module.exports = {
 
 #### With TypeScript:
 
+> Don't forget to add the parserOptions into your project Eslint config
+
 ```js
 module.exports = {
   extends: '@qimpl/eslint-config/react-typescript',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
 };
 ```
 
