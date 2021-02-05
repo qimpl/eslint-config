@@ -7,6 +7,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   rules: {
+    'no-use-before-define': 'off',
+    'no-shadow': 'off',
     'react/jsx-filename-extension': [
       1,
       { extensions: ['.js', '.jsx', 'ts', 'tsx'] },
@@ -21,5 +23,15 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-shadow': ['error'],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.ts', '.tsx'],
+      },
+    },
   },
 };
