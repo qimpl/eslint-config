@@ -13,6 +13,7 @@ module.exports = {
       1,
       { extensions: ['.js', '.jsx', 'ts', 'tsx'] },
     ],
+    'react/prop-types': [0],
     'import/extensions': [
       'error',
       'ignorePackages',
