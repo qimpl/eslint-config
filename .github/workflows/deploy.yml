@@ -18,7 +18,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Release version v${{ env.RELEASE_VERSION }}
-          branch: feat/auto-release
+          branch: master
 
   deploy:
     runs-on: ubuntu-latest
