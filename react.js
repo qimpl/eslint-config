@@ -11,10 +11,8 @@ module.exports = {
     'plugin:import/errors',
     'plugin:jsx-a11y/recommended',
     'prettier',
-    'prettier/babel',
-    'prettier/react',
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -27,8 +25,8 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal'],
-        pathGroups: [
+        'groups': ['builtin', 'external', 'internal'],
+        'pathGroups': [
           {
             pattern: 'react',
             group: 'external',
@@ -40,9 +38,9 @@ module.exports = {
             position: 'before',
           },
         ],
-        pathGroupsExcludedImportTypes: ['react'],
+        'pathGroupsExcludedImportTypes': ['react'],
         'newlines-between': 'always',
-        alphabetize: {
+        'alphabetize': {
           order: 'asc',
         },
       },
@@ -63,7 +61,7 @@ module.exports = {
     'import/resolver': {
       'babel-module': {},
     },
-    react: {
+    'react': {
       version: 'detect',
     },
   },
